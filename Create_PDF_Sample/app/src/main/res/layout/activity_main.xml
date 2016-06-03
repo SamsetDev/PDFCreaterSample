@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actvities.MainActivity">
+    <include
+        android:id="@+id/tool0"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_below="@+id/tool0"
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <android.support.v7.widget.AppCompatButton
+            android:background="@drawable/rounded_shape"
+            android:id="@+id/btn_create_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create New Pdf" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/options_layout"
+        android:id="@+id/pdf_selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/pdfList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
