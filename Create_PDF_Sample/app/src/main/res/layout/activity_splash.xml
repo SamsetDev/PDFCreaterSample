@@ -12,15 +12,21 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.-->
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/text1"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:minHeight="?android:attr/listPreferredItemHeightSmall"
-    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
-    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-    android:textAppearance="?android:attr/textAppearanceListItemSmall"
-    android:textColor="@android:color/black"
-    tools:ignore="RtlCompat" />
+    android:layout_height="match_parent"
+    android:background="@drawable/backs"
+    android:fitsSystemWindows="true"
+    tools:context="com.samset.create_pdf_sample.actvities.SplashActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:text="ScrapDealers"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+</RelativeLayout>
